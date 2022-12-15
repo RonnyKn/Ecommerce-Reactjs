@@ -1,0 +1,30 @@
+nav {
+  width: 100vw;
+  background: blue;
+  position: fixed;
+  height: 5rem;
+}
+
+.navbar-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 6rem;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar-menu button {
+  background: transparent;
+  transform: scale(2);
+  cursor: pointer;
+  color: var(--color-white);
+}
