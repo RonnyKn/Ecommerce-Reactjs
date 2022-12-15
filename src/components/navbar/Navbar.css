@@ -3,6 +3,7 @@ nav {
   background: blue;
   position: fixed;
   height: 5rem;
+  z-index: 99;
 }
 
 .navbar-container {
