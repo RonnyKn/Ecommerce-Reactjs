@@ -1,9 +1,16 @@
 nav {
   width: 100vw;
-  background: rgb(27, 76, 224);
   position: fixed;
   height: 5rem;
   z-index: 99;
+}
+
+.nav-0 {
+  background: rgb(27, 76, 224);
+}
+
+.nav-30 {
+  background: #fff;
 }
 
 .navbar-container {

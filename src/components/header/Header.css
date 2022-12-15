@@ -1,15 +1,14 @@
 .header {
   width: 100vw;
-  position: relative;
-  top: 5rem;
   height: 100vh;
   background-image: linear-gradient(0.2deg, rgba(40, 173, 222, 1) 4.8%, rgb(27, 76, 224) 85.5%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 65%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
 }
 
-/* .header-container{
+.header-container {
+  padding-top: 5rem;
+}
 
-} */
 .header-title h1 {
   color: black;
   text-align: center;
