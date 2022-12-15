@@ -1,5 +1,7 @@
 nav {
-  width: 100vw;
+  top: 0;
+  left: 0;
+  width: 100%;
   position: fixed;
   height: 5rem;
   z-index: 99;
@@ -10,7 +12,9 @@ nav {
 }
 
 .nav-30 {
-  background: #fff;
+  background: rgb(149, 145, 255);
+  color: #000;
+  opacity: 0.9;
 }
 
 .navbar-container {
