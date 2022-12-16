@@ -1,8 +1,5 @@
 import React from "react"
 import "./Header.css"
-import vid1 from "../../assets/video/vcover1.png"
-import vid2 from "../../assets/video/vcover2.png"
-import vid3 from "../../assets/video/vcover3.png"
 import headerProduct from "../../assets/img/hero.png"
 import {
   AiFillFacebook,
@@ -11,22 +8,23 @@ import {
   AiFillTwitterCircle,
 } from "react-icons/ai"
 import { BsMessenger } from "react-icons/bs"
-
-const Header = () => {
+const Header = ({ headerapi: { title, subtitle, img, btntext, videos } }) => {
   return (
     <header className="header">
       <div className="container header-container">
         <div className="header-title">
-          <h1>Choose Your Shoes, Choose Your Style </h1>
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
+          <button>{btntext}</button>
         </div>
         <div className="header-content">
-          <div className="header-videos">
-            <img src={vid1} alt="video1" />
-            <img src={vid2} alt="video1" />
-            <img src={vid3} alt="video1" />
-          </div>
+          <aside className="header-videos">
+            {videos.map((vid, idx) => (
+              <img src={vid?.imgsrc} alt="clips" key={idx} />
+            ))}
+          </aside>
           <div className="header-product">
-            <img src={headerProduct} alt="headerProduct" />
+            <img src={img} alt="headerImgProduct" />
           </div>
           <div className="header-socials">
             <button>
