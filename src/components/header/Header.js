@@ -1,6 +1,5 @@
 import React from "react"
 import "./Header.css"
-import headerProduct from "../../assets/img/hero.png"
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -8,6 +7,7 @@ import {
   AiFillTwitterCircle,
 } from "react-icons/ai"
 import { BsMessenger } from "react-icons/bs"
+import Clips from "../clips/Clips"
 const Header = ({ headerapi: { title, subtitle, img, btntext, videos } }) => {
   return (
     <header className="header">
@@ -20,7 +20,7 @@ const Header = ({ headerapi: { title, subtitle, img, btntext, videos } }) => {
         <div className="header-content">
           <aside className="header-videos">
             {videos.map((vid, idx) => (
-              <img src={vid?.imgsrc} alt="clips" key={idx} />
+              <Clips vid={vid} key={idx} />
             ))}
           </aside>
           <div className="header-product">
