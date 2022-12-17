@@ -27,17 +27,6 @@
   gap: 5rem;
 }
 
-.header-videos {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  padding: .5rem;
-}
-
-.header-videos img {
-  border-radius: 1rem;
-  cursor: pointer;
-}
 
 .header-product {
   transform: scale(.7) rotate(-20deg);
