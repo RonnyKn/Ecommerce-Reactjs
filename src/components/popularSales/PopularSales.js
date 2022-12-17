@@ -1,16 +1,17 @@
 import "./PopularSales.css"
 import React from "react"
+import SingleShoe from "../singleShoe/SingleShoe"
 
 const PopularSales = ({ highlight, popularsales: { title, items } }) => {
   return (
     <section className="popularsales">
       <div className="container popularsales-container">
         <div className="popularsales-title">
-          <h2>{title}</h2>
+          <h1>{title}</h1>
         </div>
         <div className="popularsales-content">
           {items?.map((item, idx) => (
-            <SinglePopularsales />
+            <SingleShoe {...item} key={idx} />
           ))}
         </div>
       </div>

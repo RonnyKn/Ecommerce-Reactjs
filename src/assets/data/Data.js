@@ -48,7 +48,7 @@ const popularsales = {
       btn: "Buy Now",
       img: psale2,
       price: "200",
-      color: "from-blue-600 to-blue-500",
+      color: "blue",
     },
     {
       id: "0p0x2",
@@ -58,7 +58,7 @@ const popularsales = {
       btn: "Buy Now",
       img: psale1,
       price: "200",
-      color: "from-red-500 to-rose-500",
+      color: "red",
     },
     {
       id: "0p0x3",
@@ -68,7 +68,7 @@ const popularsales = {
       btn: "Buy Now",
       img: psale3,
       price: "200",
-      color: "from-violet-500 to-indigo-500",
+      color: "violet",
     },
   ],
 }

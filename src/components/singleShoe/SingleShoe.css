@@ -1,0 +1,51 @@
+.singleshoe {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 1rem;
+  place-items: center;
+}
+
+.shoe-span {
+  height: 100%;
+  width: 100%;
+  font-size: .9rem;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2rem;
+  align-items: center;
+}
+
+.shoe-button {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  padding-right: 1.5rem;
+}
+
+.shoe-button button {
+  padding: .4rem;
+  border-radius: .5rem;
+}
+
+.shoe-button button:nth-child(1) {
+  transform: scale(1.1);
+}
+
+.shoe-img img {
+  transform: rotate(-25deg) scale(1.7);
+}
+
+.blue {
+  background: blue;
+}
+
+.red {
+  background: red;
+}
+
+.violet {
+  background: violet;
+}
