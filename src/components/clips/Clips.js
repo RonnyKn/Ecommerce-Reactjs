@@ -6,7 +6,7 @@ const Clips = ({ imgsrc, clip }) => {
     <>
       <div className="clips">
         <img src={imgsrc} alt="img/clips" />
-        <video
+        {/* <video
           className="hidden"
           autoPlay={true}
           loop={true}
@@ -14,7 +14,7 @@ const Clips = ({ imgsrc, clip }) => {
           playsInline={true}
         >
           <source type="video/mp4" src={clip} />
-        </video>
+        </video> */}
       </div>
     </>
   )

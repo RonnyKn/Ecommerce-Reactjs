@@ -1,29 +1,4 @@
-.clips {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  padding: .5rem;
-}
-
-.hidden:hover {
-  z-index: 20;
-  /* transform: scale(1.05); */
-}
-
 .clips img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 30;
+  padding: .5rem;
   border-radius: 1rem;
-  cursor: pointer;
-  width: 100%;
-}
-
-.hidden {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10rem;
 }
