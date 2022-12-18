@@ -1,0 +1,24 @@
+.trs-title {
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 3rem;
+}
+
+.trs-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* =============MEDIA QUERIES============= */
+@media screen and (max-width:990px) {
+  .trs-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width:600px) {
+  .trs-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

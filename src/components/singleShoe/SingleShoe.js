@@ -3,9 +3,20 @@ import React from "react"
 import { AiFillStar } from "react-icons/ai"
 import { BsFillCartPlusFill } from "react-icons/bs"
 
-const SingleShoe = ({ id, title, text, rating, btn, img, price, color }) => {
+const SingleShoe = ({
+  customStyle,
+  customImg,
+  id,
+  title,
+  text,
+  rating,
+  btn,
+  img,
+  price,
+  color,
+}) => {
   return (
-    <div className={`singleshoe ${color}`}>
+    <div className={`singleshoe ${color} ${customStyle}`}>
       <div className="shoe-content">
         <h5>{title}</h5>
         <h6> {text}</h6>
@@ -23,7 +34,7 @@ const SingleShoe = ({ id, title, text, rating, btn, img, price, color }) => {
           <button>{btn}</button>
         </div>
       </div>
-      <div className="shoe-img">
+      <div className={`shoe-img ${customImg}`}>
         <img src={img} alt="img" />
       </div>
     </div>

@@ -4,6 +4,17 @@
   grid-template-columns: repeat(2, 1fr);
   border-radius: 1rem;
   place-items: center;
+  background: gray;
+}
+
+.grid1 {
+  grid-template-columns: 1fr !important;
+  text-align: left;
+}
+
+.img1 img {
+  transform: rotate(0deg) scale(1) !important;
+  padding: 1rem !important;
 }
 
 .shoe-span {
@@ -40,15 +51,16 @@
 }
 
 .blue {
-  background: blue;
+  background: blue !important;
 }
 
 .red {
-  background: red;
+  background: red !important;
 }
 
 .violet {
-  background: violet;
+  background: violet !important;
+  ;
 }
 
 /* =========MEDIA QUERIES======== */
