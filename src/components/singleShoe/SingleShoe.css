@@ -1,5 +1,5 @@
 .singleshoe {
-  padding: 1rem;
+  padding: 1rem .5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 1rem;
@@ -11,31 +11,32 @@
   width: 100%;
   font-size: .9rem;
   display: flex;
-  justify-content: space-between;
-  padding-right: 2rem;
+  gap: 1rem;
   align-items: center;
+  margin: .2rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
 }
 
 .shoe-button {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   gap: .5rem;
-  padding-right: 1.5rem;
 }
 
 .shoe-button button {
-  padding: .4rem;
+  padding: .5rem;
   border-radius: .5rem;
 }
 
-.shoe-button button:nth-child(1) {
-  transform: scale(1.1);
-}
-
 .shoe-img img {
-  transform: rotate(-25deg) scale(1.7);
+  transform: rotate(-25deg) scale(1.5);
 }
 
 .blue {
@@ -48,4 +49,18 @@
 
 .violet {
   background: violet;
+}
+
+/* =========MEDIA QUERIES======== */
+@media screen and (max-width:990px) {
+  .shoe-img img {
+    transform: rotate(-20deg) scale(1.2);
+  }
+}
+
+@media screen and (max-width:600px) {
+  .shoe-img img {
+    transform: rotate(-15deg);
+
+  }
 }

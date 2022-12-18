@@ -11,9 +11,10 @@ const SingleShoe = ({ id, title, text, rating, btn, img, price, color }) => {
         <h6> {text}</h6>
         <div className="shoe-span">
           <span>${price}</span>
-          <span>
-            <AiFillStar /> {rating}
-          </span>
+          <div className="rating">
+            <AiFillStar />
+            <span>{rating}</span>
+          </div>
         </div>
         <div className="shoe-button">
           <button>
