@@ -17,6 +17,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
+  place-items: center;
 }
 
 
@@ -29,6 +30,7 @@
 }
 
 .featured-content p {
+  text-align: justify;
   font-size: .9rem;
   margin: .5rem 0 2rem;
 }
@@ -51,10 +53,19 @@
   .trs-content {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .featured {
+    gap: 3rem;
+  }
 }
 
 @media screen and (max-width:600px) {
   .trs-content {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
