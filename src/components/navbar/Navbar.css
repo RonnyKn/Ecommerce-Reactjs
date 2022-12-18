@@ -1,19 +1,17 @@
-nav {
+.navbar {
   top: 0;
   left: 0;
   width: 100%;
   position: fixed;
   height: 5rem;
   z-index: 99;
-}
-
-.nav-0 {
   background: rgb(27, 76, 224);
 }
 
-.nav-30 {
+.nav-10 {
   background: rgb(149, 145, 255);
   opacity: 0.9;
+  color: black;
 }
 
 .navbar-container {
@@ -28,6 +26,7 @@ nav {
   cursor: pointer;
 }
 
+
 .navbar-menu {
   display: flex;
   gap: 3rem;
@@ -38,6 +37,14 @@ nav {
   transform: scale(2);
   cursor: pointer;
   color: var(--color-white);
+}
+
+.logo-10 img {
+  filter: brightness(0);
+}
+
+.menu-10 button {
+  color: var(--color-black) !important;
 }
 
 /* ============MEDIA QUERIES=========== */

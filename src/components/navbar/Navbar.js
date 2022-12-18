@@ -22,12 +22,12 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className={`navbar ${navState ? "nav-30" : "nav-0"}`}>
+    <nav className={`navbar ${navState ? "nav-10" : ""}`}>
       <div className="container navbar-container">
-        <div className="navbar-logo">
+        <div className={`navbar-logo ${navState ? "logo-10" : ""}`}>
           <img src={Logo} alt="Logo" />
         </div>
-        <div className="navbar-menu">
+        <div className={`navbar-menu ${navState ? "menu-10" : ""}`}>
           <button>
             <BiSearch />
           </button>
