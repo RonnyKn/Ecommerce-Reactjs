@@ -10,7 +10,7 @@
 /* =========TOP SALES PROPS=========== */
 .grid1 {
   grid-template-columns: 1fr !important;
-  text-align: left;
+  text-align: center;
 }
 
 .img1 img {
