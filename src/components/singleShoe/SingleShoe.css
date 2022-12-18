@@ -7,6 +7,7 @@
   background: gray;
 }
 
+/* =========TOP SALES PROPS=========== */
 .grid1 {
   grid-template-columns: 1fr !important;
   text-align: left;
@@ -16,6 +17,8 @@
   transform: rotate(0deg) scale(1) !important;
   padding: 1rem !important;
 }
+
+/* =========END=========== */
 
 .shoe-span {
   height: 100%;
