@@ -4,6 +4,7 @@ import {
   popularsales,
   highlight,
   topratedsales,
+  featured,
 } from "../src/assets/data/Data"
 import Header from "./components/header/Header"
 import Navbar from "./components/navbar/Navbar"
@@ -13,7 +14,6 @@ import TopRatedSales from "./components/topRatedSales/TopRatedSales"
 function App() {
   return (
     <>
-      <div style={{ gridTemplateColumns: "1fr" }}></div>
       <Navbar />
       <Header headerapi={headerapi} />
       <PopularSales popularsales={popularsales} highlight={highlight} />
@@ -21,6 +21,7 @@ function App() {
         topratedsales={topratedsales}
         customStyle={"grid1"}
         customImg={"img1"}
+        featured={featured}
       />
     </>
   )
