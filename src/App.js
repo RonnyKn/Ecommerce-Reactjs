@@ -11,6 +11,7 @@ import Header from "./components/header/Header"
 import Navbar from "./components/navbar/Navbar"
 import PopularSales from "./components/popularSales/PopularSales"
 import TopRatedSales from "./components/topRatedSales/TopRatedSales"
+import Story from "./components/story/Story"
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         customImg={"img1"}
         featured={featured}
       />
-      <Story />
+      <Story stories={stories} />
     </>
   )
 }
