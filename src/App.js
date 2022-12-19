@@ -5,6 +5,7 @@ import {
   highlight,
   topratedsales,
   featured,
+  stories,
 } from "../src/assets/data/Data"
 import Header from "./components/header/Header"
 import Navbar from "./components/navbar/Navbar"
@@ -23,6 +24,7 @@ function App() {
         customImg={"img1"}
         featured={featured}
       />
+      <Story />
     </>
   )
 }
