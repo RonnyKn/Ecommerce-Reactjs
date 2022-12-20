@@ -6,7 +6,6 @@ import {
   topratedsales,
   featured,
   stories,
-  footerapi,
 } from "../src/assets/data/Data"
 import Header from "./components/header/Header"
 import Navbar from "./components/navbar/Navbar"
@@ -28,7 +27,7 @@ function App() {
         featured={featured}
       />
       <Story stories={stories} />
-      <Footer footerapi={footerapi} />
+      <Footer />
     </>
   )
 }

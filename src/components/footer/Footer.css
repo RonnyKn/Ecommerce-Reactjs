@@ -1,0 +1,23 @@
+.footer {
+  background: rgb(182, 182, 255);
+}
+
+.footer-container {
+  height: 100%;
+  color: var(--color-black);
+}
+
+.footer-titles {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* ============MEDIA QUERIES========= */
+@media screen and (max-width:600px) {
+  .footer-titles {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
