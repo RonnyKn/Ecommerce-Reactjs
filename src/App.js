@@ -12,6 +12,7 @@ import Navbar from "./components/navbar/Navbar"
 import PopularSales from "./components/popularSales/PopularSales"
 import TopRatedSales from "./components/topRatedSales/TopRatedSales"
 import Story from "./components/story/Story"
+import Footer from "./components/footer/Footer"
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         featured={featured}
       />
       <Story stories={stories} />
+      <Footer />
     </>
   )
 }
