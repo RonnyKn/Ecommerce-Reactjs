@@ -9,9 +9,28 @@
 }
 
 .story-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* ========SPLIDE======== */
+.splide__arrow {
+  background: blue !important;
+  height: 5rem;
+  width: 5rem;
+}
+
+.splide__arrow svg {
+  color: var(--color-white) !important;
+}
+
+.splide__pagination__page {
+  top: 2rem;
+}
+
+.splide__pagination__page.is-active {
+  background: blue !important;
 }
 
 .content-data {
