@@ -1,6 +1,6 @@
 import React from "react"
 import EmptyIMG from "../../assets/img/emptybag.png"
-import { HiOutlineArrowLeft, HiScale } from "react-icons/hi"
+import { HiOutlineArrowLeft } from "react-icons/hi"
 const CartEmpty = () => {
   return (
     <>
