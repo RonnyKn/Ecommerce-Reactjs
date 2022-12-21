@@ -7,9 +7,13 @@ import CartItem from "./CartItem"
 const Cart = () => {
   return (
     <>
-      <CartCount />
-      <CartEmpty />
-      <CartItem />
+      <div className="cart-wrapper">
+        <div className="cart">
+          <CartCount />
+          <CartEmpty />
+          <CartItem />
+        </div>
+      </div>
     </>
   )
 }
