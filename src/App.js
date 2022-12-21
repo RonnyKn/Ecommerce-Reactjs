@@ -13,11 +13,13 @@ import PopularSales from "./components/popularSales/PopularSales"
 import TopRatedSales from "./components/topRatedSales/TopRatedSales"
 import Story from "./components/story/Story"
 import Footer from "./components/footer/Footer"
+import Cart from "./components/cart/Cart"
 
 function App() {
   return (
     <>
       <Navbar />
+      <Cart />
       <Header headerapi={headerapi} />
       <PopularSales popularsales={popularsales} highlight={highlight} />
       <TopRatedSales
