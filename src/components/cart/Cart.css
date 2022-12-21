@@ -16,4 +16,35 @@
   height: 100vh;
   width: 45%;
   background: var(--color-white);
+  color: var(--color-black);
+  padding: 1rem;
+}
+
+.count-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.count-item h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count-item span {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: .2rem .5rem;
+  border-radius: 10%;
+  font-size: .9rem;
+}
+
+.count-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-black);
+  padding: .5rem;
+  border-radius: 10%;
 }
