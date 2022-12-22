@@ -13,7 +13,7 @@ const CartCount = ({ onChartToggle }) => {
         </div>
         <div className="count-close">
           <button type="button" onClick={onChartToggle}>
-            <AiOutlineClose color="#fff" />
+            <AiOutlineClose />
           </button>
         </div>
       </div>

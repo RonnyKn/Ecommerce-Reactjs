@@ -51,7 +51,18 @@
   align-items: center;
   background: var(--color-black);
   padding: .5rem;
-  border-radius: 10%;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.count-close button {
+  border-radius: 50%;
+  color: var(--color-black);
+  padding: .1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.5);
 }
 
 /* ============END CART COUNT=========== */
