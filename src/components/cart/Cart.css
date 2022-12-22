@@ -10,6 +10,10 @@
   background: gray;
 }
 
+.cart-unvisible {
+  display: none;
+}
+
 .cart {
   position: absolute;
   right: 0;

@@ -2,7 +2,7 @@ import React from "react"
 import { AiOutlineClose } from "react-icons/ai"
 import { HiChevronDoubleLeft } from "react-icons/hi"
 
-const CartCount = () => {
+const CartCount = ({ onChartToggle }) => {
   return (
     <>
       <div className="count-container">
@@ -12,7 +12,9 @@ const CartCount = () => {
           </h4>
         </div>
         <div className="count-close">
-          <AiOutlineClose color="#fff" />
+          <button type="button" onClick={onChartToggle}>
+            <AiOutlineClose color="#fff" />
+          </button>
         </div>
       </div>
     </>

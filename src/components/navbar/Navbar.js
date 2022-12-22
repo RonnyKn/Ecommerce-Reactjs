@@ -2,9 +2,20 @@ import React, { useEffect, useState } from "react"
 import "./Navbar.css"
 import { BiSearch, BiHeart, BiCartAlt } from "react-icons/bi"
 import Logo from "../../assets/img/logo.png"
+import { useDispatch } from "react-redux"
+import { setOpenCart } from "../../app/CartSlice"
 
 const Navbar = () => {
   const [navState, setNavState] = useState(false)
+  const dispatch = useDispatch()
+
+  const onChartToggle = () => {
+    dispatch(
+      setOpenCart({
+        cartState: true,
+      })
+    )
+  }
 
   const onNavScroll = () => {
     if (window.scrollY > 10) {
@@ -34,7 +45,7 @@ const Navbar = () => {
           <button>
             <BiHeart />
           </button>
-          <button>
+          <button type="button" onClick={onChartToggle}>
             <BiCartAlt />
           </button>
         </div>
