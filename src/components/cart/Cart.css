@@ -97,4 +97,16 @@
   transform: scale(1.5);
 }
 
+.empty-unvisible {
+  display: none;
+}
+
 /* ===============END CART EMPTY============ */
+
+/* ===============CART ITEMS============== */
+.cartitems {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* ===============END CART ITEMS============== */

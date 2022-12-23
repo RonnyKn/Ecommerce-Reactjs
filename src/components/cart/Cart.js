@@ -4,11 +4,16 @@ import CartCount from "./CartCount"
 import CartEmpty from "./CartEmpty"
 import CartItem from "./CartItem"
 import { useDispatch, useSelector } from "react-redux"
-import { setClosecart, selectCartState } from "../../app/CartSlice"
+import {
+  setClosecart,
+  selectCartState,
+  selectCartItems,
+} from "../../app/CartSlice"
 
 const Cart = () => {
   const dispatch = useDispatch()
   const ifCartState = useSelector(selectCartState)
+  const ifCartItems = useSelector(selectCartItems)
 
   const onChartToggle = () => {
     dispatch(
@@ -23,7 +28,7 @@ const Cart = () => {
       <div className={`${ifCartState ? "cart-wrapper " : "cart-unvisible"}`}>
         <div className="cart">
           <CartCount onChartToggle={onChartToggle} />
-          <CartEmpty />
+          <CartEmpty ifCartItems={ifCartItems} />
           <CartItem />
         </div>
       </div>

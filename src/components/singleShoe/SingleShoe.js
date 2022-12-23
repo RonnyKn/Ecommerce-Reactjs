@@ -1,7 +1,9 @@
 import "./SingleShoe.css"
 import React from "react"
+import { useDispatch } from "react-redux"
 import { AiFillStar } from "react-icons/ai"
 import { BsFillCartPlusFill } from "react-icons/bs"
+import { setAddItems } from "../../app/CartSlice"
 
 const SingleShoe = ({
   customStyle,
@@ -15,6 +17,12 @@ const SingleShoe = ({
   price,
   color,
 }) => {
+  const dispatch = useDispatch()
+  const addToCart = () => {
+    const item = { id, title, text, img, price, color }
+    dispatch(setAddItems(item))
+  }
+
   return (
     <div className={`singleshoe ${color} ${customStyle}`}>
       <div className="shoe-content">
@@ -28,7 +36,7 @@ const SingleShoe = ({
           </div>
         </div>
         <div className="shoe-button">
-          <button>
+          <button type="button" onClick={addToCart}>
             <BsFillCartPlusFill />
           </button>
           <button>{btn}</button>

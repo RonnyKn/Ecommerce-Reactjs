@@ -1,10 +1,15 @@
 import React from "react"
 import EmptyIMG from "../../assets/img/emptybag.png"
 import { HiOutlineArrowLeft } from "react-icons/hi"
-const CartEmpty = () => {
+
+const CartEmpty = ({ ifCartItems }) => {
   return (
     <>
-      <div className="cartempty">
+      <div
+        className={`${
+          ifCartItems.length === 0 ? "cartempty" : "empty-unvisible"
+        }`}
+      >
         <img src={EmptyIMG} alt="empty bag" />
         <button type="button">
           <HiOutlineArrowLeft className="cartempty-icon" />
