@@ -4,11 +4,7 @@ import SingleShoe from "../singleShoe/SingleShoe"
 const CartItem = ({ ifCartItems }) => {
   return (
     <>
-      <div
-        className={`${
-          ifCartItems.length >= 1 ? "cartitem" : "cartitem-unvisible"
-        }`}
-      >
+      <div className="cartitem">
         {ifCartItems.map((val, idx) => (
           <SingleShoe
             {...val}

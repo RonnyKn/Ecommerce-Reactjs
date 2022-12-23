@@ -5,11 +5,7 @@ import { HiOutlineArrowLeft } from "react-icons/hi"
 const CartEmpty = ({ ifCartItems }) => {
   return (
     <>
-      <div
-        className={`${
-          ifCartItems.length === 0 ? "cartempty" : "empty-unvisible"
-        }`}
-      >
+      <div className="cartempty">
         <img src={EmptyIMG} alt="empty bag" />
         <button type="button">
           <HiOutlineArrowLeft className="cartempty-icon" />
