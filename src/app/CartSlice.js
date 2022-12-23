@@ -3,7 +3,9 @@ import { toast } from "react-hot-toast"
 
 const initialState = {
   cartState: false,
-  cartItems: [], //db array
+  cartItems: localStorage.getItem("cart")
+    ? JSON.parse(localStorage.getItem("cart"))
+    : [], //cek ke localstorage dgn key cart? if true then json string convert to JS object : else leave it empty array.
 }
 
 const CartSlice = createSlice({
@@ -31,6 +33,7 @@ const CartSlice = createSlice({
         state.cartItems.push(temp) //masukan ke array
         toast.success(`${action.payload.title} added to cart`)
       }
+      localStorage.setItem("cart", JSON.stringify(state.cartItems)) //set localstorage dgn key cart then convert JS ke JSON string
     },
   },
 })
