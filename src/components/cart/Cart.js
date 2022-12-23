@@ -15,6 +15,8 @@ const Cart = () => {
   const ifCartState = useSelector(selectCartState)
   const ifCartItems = useSelector(selectCartItems)
 
+  console.log(ifCartItems)
+
   const onChartToggle = () => {
     dispatch(
       setClosecart({
@@ -29,7 +31,7 @@ const Cart = () => {
         <div className="cart">
           <CartCount onChartToggle={onChartToggle} />
           <CartEmpty ifCartItems={ifCartItems} />
-          <CartItem />
+          <CartItem ifCartItems={ifCartItems} />
         </div>
       </div>
     </>
