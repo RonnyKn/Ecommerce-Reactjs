@@ -105,8 +105,57 @@
 
 /* ===============CART ITEMS============== */
 .cartitems {
+  margin-top: 1rem;
+  color: var(--color-black);
   display: grid;
   grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.qty button {
+  padding: .5rem .8rem;
+  background: var(--color-black);
+  color: var(--color-white);
+  border-radius: .5rem;
+}
+
+.cartitem {
+  display: grid;
+  grid-template-columns: 1fr 2fr .5fr;
+  gap: 1rem;
+  place-items: center;
+}
+
+.item-img {
+  padding: .5rem;
+  border-radius: 1rem;
+}
+
+.item-img h5 {
+  text-align: right;
+  padding: .2rem .4rem;
+  background: var(--color-white);
+  opacity: .7;
+  width: fit-content;
+  border-radius: 1rem;
+}
+
+.item-content {
+  text-align: center;
+}
+
+.qty {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.item-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
 }
 
 /* ===============END CART ITEMS============== */

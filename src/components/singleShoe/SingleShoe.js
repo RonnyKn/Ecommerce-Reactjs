@@ -8,6 +8,7 @@ import { setAddItems } from "../../app/CartSlice"
 const SingleShoe = ({
   customStyle,
   customImg,
+  customNone,
   id,
   title,
   text,
@@ -28,14 +29,14 @@ const SingleShoe = ({
       <div className="shoe-content">
         <h5>{title}</h5>
         <h6> {text}</h6>
-        <div className="shoe-span">
+        <div className={`shoe-span ${customNone}`}>
           <span>${price}</span>
           <div className="rating">
             <AiFillStar />
             <span>{rating}</span>
           </div>
         </div>
-        <div className="shoe-button">
+        <div className={`shoe-button ${customNone}`}>
           <button type="button" onClick={addToCart}>
             <BsFillCartPlusFill />
           </button>
