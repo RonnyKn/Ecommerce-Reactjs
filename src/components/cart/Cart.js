@@ -32,7 +32,7 @@ const Cart = () => {
           <CartCount onChartToggle={onChartToggle} />
 
           {ifCartItems.length === 0 ? (
-            <CartEmpty ifCartItems={ifCartItems} />
+            <CartEmpty onChartToggle={onChartToggle} />
           ) : (
             <CartItem ifCartItems={ifCartItems} />
           )}
