@@ -19,15 +19,18 @@ const CartItem = ({ ifCartItems }) => {
                 <button>
                   <AiOutlineMinus />
                 </button>
-                <span>{val?.cartQuantity}</span>
+                <span>
+                  <strong> {val?.cartQuantity} </strong>
+                </span>
                 <button>
                   <AiOutlinePlus />
                 </button>
               </div>
             </div>
             <div className="item-price">
-              <span>{val?.price * val?.cartQuantity}</span>
-              <button>
+              <h3>Total:</h3>
+              <span>${val?.price * val?.cartQuantity}</span>
+              <button className="price-icon">
                 <AiTwotoneDelete />
               </button>
             </div>
