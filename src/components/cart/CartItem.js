@@ -35,6 +35,14 @@ const CartItem = ({ ifCartItems }) => {
             </div>
           </div>
         ))}
+        <div className="subtotal">
+          <div className="subtotal-price">
+            <h5>SUBTOTAL</h5>
+            <span>$000</span>
+          </div>
+          <p>Taxes and Shipping Will Calculate At Shipping</p>
+          <button>Check Out</button>
+        </div>
       </div>
     </>
   )
