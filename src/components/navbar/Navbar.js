@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react"
 import "./Navbar.css"
 import { BiSearch, BiHeart, BiCartAlt } from "react-icons/bi"
 import Logo from "../../assets/img/logo.png"
-import { useDispatch } from "react-redux"
-import { setOpenCart } from "../../app/CartSlice"
+import { useDispatch, useSelector } from "react-redux"
+import { selectCartItems, setOpenCart } from "../../app/CartSlice"
 
 const Navbar = () => {
   const [navState, setNavState] = useState(false)
+  const ifCartItems = useSelector(selectCartItems)
   const dispatch = useDispatch()
 
   const onChartToggle = () => {
@@ -45,8 +46,11 @@ const Navbar = () => {
           <button>
             <BiHeart />
           </button>
-          <button type="button" onClick={onChartToggle}>
+          <button className="navbar-cart" type="button" onClick={onChartToggle}>
             <BiCartAlt />
+            {ifCartItems.length > 0 ? (
+              <span className="cart-badge">{ifCartItems.length}</span>
+            ) : null}
           </button>
         </div>
       </div>

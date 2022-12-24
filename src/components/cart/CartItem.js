@@ -2,7 +2,6 @@ import React from "react"
 import { AiOutlineMinus, AiOutlinePlus, AiTwotoneDelete } from "react-icons/ai"
 
 const CartItem = ({ ifCartItems }) => {
-  console.log(ifCartItems)
   return (
     <>
       <div className="cartitems">
@@ -28,7 +27,7 @@ const CartItem = ({ ifCartItems }) => {
               </div>
             </div>
             <div className="item-price">
-              <h3>Total:</h3>
+              <h3>Price:</h3>
               <span>${val?.price * val?.cartQuantity}</span>
               <button className="price-icon">
                 <AiTwotoneDelete />
