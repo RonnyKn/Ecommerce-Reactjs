@@ -29,7 +29,7 @@ const Cart = () => {
     <>
       <div className={`${ifCartState ? "cart-wrapper " : "cart-unvisible"}`}>
         <div className="cart">
-          <CartCount onChartToggle={onChartToggle} />
+          <CartCount onChartToggle={onChartToggle} ifCartItems={ifCartItems} />
 
           {ifCartItems.length === 0 ? (
             <CartEmpty onChartToggle={onChartToggle} />
