@@ -16,13 +16,13 @@ const CartItem = ({ ifCartItems }) => {
               <h3>{val?.title}</h3>
               <small>{val?.text}</small>
               <div className="qty">
-                <button>
+                <button className="price-icon">
                   <AiOutlineMinus />
                 </button>
                 <span>
                   <strong> {val?.cartQuantity} </strong>
                 </span>
-                <button>
+                <button className="price-icon">
                   <AiOutlinePlus />
                 </button>
               </div>
