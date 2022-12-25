@@ -1,7 +1,11 @@
 import React from "react"
-import { AiOutlineMinus, AiOutlinePlus, AiTwotoneDelete } from "react-icons/ai"
 import { useDispatch } from "react-redux"
-import { setRemoveItems } from "../../app/CartSlice"
+import {
+  setDecreaseQty,
+  setIncreaseQty,
+  setRemoveItems,
+} from "../../app/CartSlice"
+import { AiOutlineMinus, AiOutlinePlus, AiTwotoneDelete } from "react-icons/ai"
 
 const CartItem = ({
   item: { id, title, text, img, price, color, cartQuantity },
@@ -10,6 +14,17 @@ const CartItem = ({
   const onRemoveItems = () => {
     dispatch(
       setRemoveItems({ id, title, text, img, price, color, cartQuantity })
+    )
+  }
+
+  const onIncreaseQty = () => {
+    dispatch(
+      setIncreaseQty({ id, title, text, img, price, color, cartQuantity })
+    )
+  }
+  const onDecreaseQty = () => {
+    dispatch(
+      setDecreaseQty({ id, title, text, img, price, color, cartQuantity })
     )
   }
 
@@ -23,13 +38,22 @@ const CartItem = ({
         <h3>{title}</h3>
         <small>{text}</small>
         <div className="qty">
-          <button className="price-icon">
-            <AiOutlineMinus />
-          </button>
+          {cartQuantity <= 1 ? (
+            ""
+          ) : (
+            <button
+              className="price-icon"
+              type="button"
+              onClick={onDecreaseQty}
+            >
+              <AiOutlineMinus />
+            </button>
+          )}
+
           <span>
             <strong> {cartQuantity} </strong>
           </span>
-          <button className="price-icon">
+          <button className="price-icon" type="button" onClick={onIncreaseQty}>
             <AiOutlinePlus />
           </button>
         </div>

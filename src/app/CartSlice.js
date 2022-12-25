@@ -26,7 +26,7 @@ const CartSlice = createSlice({
       if (itemIndex >= 0) {
         state.cartItems[itemIndex].cartQuantity += 1 //cek jika ada yg sama Qty jd +1
         toast.success(
-          `${action.payload.title} Quantity increase by ${state.cartItems[itemIndex].cartQuantity}`
+          `${action.payload.title} Quantity increase to ${state.cartItems[itemIndex].cartQuantity}`
         )
       } else {
         const temp = { ...action.payload, cartQuantity: 1 } //else semua data + Qty set 1
@@ -44,11 +44,43 @@ const CartSlice = createSlice({
 
       toast.success(`${action.payload.title} removed from cart`)
     },
+    setIncreaseQty: (state, action) => {
+      const itemIndex = state.cartItems.findIndex(
+        (item) => item.id === action.payload.id //ada yg sama or not
+      )
+
+      if (itemIndex >= 0) {
+        state.cartItems[itemIndex].cartQuantity += 1 //cek jika ada yg sama Qty jd +1
+        toast.success(
+          `Quantity increase to ${state.cartItems[itemIndex].cartQuantity}`
+        )
+      }
+      localStorage.setItem("cart", JSON.stringify(state.cartItems))
+    },
+    setDecreaseQty: (state, action) => {
+      const itemIndex = state.cartItems.findIndex(
+        (item) => item.id === action.payload.id
+      )
+
+      if (state.cartItems[itemIndex].cartQuantity > 1) {
+        state.cartItems[itemIndex].cartQuantity -= 1
+        toast.success(
+          `Quantity increase to ${state.cartItems[itemIndex].cartQuantity}`
+        )
+      }
+      localStorage.setItem("cart", JSON.stringify(state.cartItems))
+    },
   },
 })
 
-export const { setOpenCart, setClosecart, setAddItems, setRemoveItems } =
-  CartSlice.actions
+export const {
+  setOpenCart,
+  setClosecart,
+  setAddItems,
+  setRemoveItems,
+  setIncreaseQty,
+  setDecreaseQty,
+} = CartSlice.actions
 
 export const selectCartState = (state) => state.cart.cartState
 
