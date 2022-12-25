@@ -85,6 +85,7 @@ export const {
   setRemoveItems,
   setIncreaseQty,
   setDecreaseQty,
+  setClearCart,
 } = CartSlice.actions
 
 export const selectCartState = (state) => state.cart.cartState

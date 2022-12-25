@@ -31,10 +31,18 @@
   align-items: center;
 }
 
-.count-item h4 {
+.count-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 2rem;
+}
+
+.count-item-button>* {
+  transform: scale(3);
+  background: var(--color-black);
+  padding: .1rem;
+  color: var(--color-white);
+  border-radius: .2rem;
+
 }
 
 .count-item span {
