@@ -12,6 +12,7 @@
   display: none;
 }
 
+
 .cart {
   position: absolute;
   right: 0;
@@ -103,6 +104,7 @@
 /* ===============END CART EMPTY============ */
 
 /* ===============CART ITEMS============== */
+/* parent di cart */
 .cartitems {
   margin-top: 1rem;
   color: var(--color-black);
@@ -120,7 +122,7 @@
 
 .cartitem {
   display: grid;
-  grid-template-columns: 1fr 2fr .5fr;
+  grid-template-columns: 1fr 1.5fr .5fr;
   gap: 1rem;
   place-items: center;
 }
