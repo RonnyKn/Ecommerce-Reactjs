@@ -35,10 +35,20 @@ const CartSlice = createSlice({
       }
       localStorage.setItem("cart", JSON.stringify(state.cartItems)) //set localstorage dgn key cart then convert JS ke JSON string
     },
+    setRemoveItems: (state, action) => {
+      const removeItem = state.cartItems.filter(
+        (item) => item.id !== action.payload.id
+      )
+      state.cartItems = removeItem
+      localStorage.setItem("cart", JSON.stringify(state.cartItems))
+
+      toast.success(`${action.payload.title} removed from cart`)
+    },
   },
 })
 
-export const { setOpenCart, setClosecart, setAddItems } = CartSlice.actions
+export const { setOpenCart, setClosecart, setAddItems, setRemoveItems } =
+  CartSlice.actions
 
 export const selectCartState = (state) => state.cart.cartState
 

@@ -1,50 +1,47 @@
 import React from "react"
 import { AiOutlineMinus, AiOutlinePlus, AiTwotoneDelete } from "react-icons/ai"
+import { useDispatch } from "react-redux"
+import { setRemoveItems } from "../../app/CartSlice"
 
-const CartItem = ({ ifCartItems }) => {
+const CartItem = ({
+  item: { id, title, text, img, price, color, cartQuantity },
+}) => {
+  const dispatch = useDispatch()
+  const onRemoveItems = () => {
+    dispatch(
+      setRemoveItems({ id, title, text, img, price, color, cartQuantity })
+    )
+  }
+
   return (
-    <>
-      <div className="cartitems">
-        {ifCartItems.map((val, idx) => (
-          <div className="cartitem" key={idx}>
-            <div className={`item-img ${val?.color}`}>
-              <h5>${val?.price}</h5>
-              <img src={val?.img} alt={`img/${val?.img}`} />
-            </div>
-            <div className="item-content">
-              <h3>{val?.title}</h3>
-              <small>{val?.text}</small>
-              <div className="qty">
-                <button className="price-icon">
-                  <AiOutlineMinus />
-                </button>
-                <span>
-                  <strong> {val?.cartQuantity} </strong>
-                </span>
-                <button className="price-icon">
-                  <AiOutlinePlus />
-                </button>
-              </div>
-            </div>
-            <div className="item-price">
-              <h3>Price:</h3>
-              <span>${val?.price * val?.cartQuantity}</span>
-              <button className="price-icon">
-                <AiTwotoneDelete />
-              </button>
-            </div>
-          </div>
-        ))}
-        <div className="subtotal">
-          <div className="subtotal-price">
-            <h5>SUBTOTAL</h5>
-            <span>$000</span>
-          </div>
-          <p>Taxes and Shipping Will Calculate At Shipping</p>
-          <button>Check Out</button>
+    <div className="cartitem">
+      <div className={`item-img ${color}`}>
+        <h5>${price}</h5>
+        <img src={img} alt={`img/${img}`} />
+      </div>
+      <div className="item-content">
+        <h3>{title}</h3>
+        <small>{text}</small>
+        <div className="qty">
+          <button className="price-icon">
+            <AiOutlineMinus />
+          </button>
+          <span>
+            <strong> {cartQuantity} </strong>
+          </span>
+          <button className="price-icon">
+            <AiOutlinePlus />
+          </button>
         </div>
       </div>
-    </>
+      <div className="item-price">
+        <h3>Price:</h3>
+        <span>${price * cartQuantity}</span>
+        <button type="button" className="price-icon" onClick={onRemoveItems}>
+          <AiTwotoneDelete />
+        </button>
+      </div>
+    </div>
   )
 }
 

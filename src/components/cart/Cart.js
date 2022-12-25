@@ -34,8 +34,20 @@ const Cart = () => {
           {ifCartItems.length === 0 ? (
             <CartEmpty onChartToggle={onChartToggle} />
           ) : (
-            <CartItem ifCartItems={ifCartItems} />
+            <div className="cartitems">
+              {ifCartItems.map((item, idx) => (
+                <CartItem item={item} key={idx} />
+              ))}
+            </div>
           )}
+          <div className="subtotal">
+            <div className="subtotal-price">
+              <h5>SUBTOTAL</h5>
+              <span>$000</span>
+            </div>
+            <p>Taxes and Shipping Will Calculate At Shipping</p>
+            <button>Check Out</button>
+          </div>
         </div>
       </div>
     </>
