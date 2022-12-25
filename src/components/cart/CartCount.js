@@ -24,9 +24,13 @@ const CartCount = ({ onChartToggle, ifCartItems }) => {
         </h4>
       </div>
       <div className="count-close">
-        <button type="button" onClick={onClearCart}>
-          <AiOutlineClose />
-        </button>
+        {ifCartItems.length === 0 ? (
+          ""
+        ) : (
+          <button type="button" onClick={onClearCart}>
+            <AiOutlineClose />
+          </button>
+        )}
       </div>
     </div>
   )
