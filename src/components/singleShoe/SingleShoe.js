@@ -1,9 +1,9 @@
 import "./SingleShoe.css"
 import React from "react"
+import { setAddItems, setOpenCart } from "../../app/CartSlice"
 import { useDispatch } from "react-redux"
 import { AiFillStar } from "react-icons/ai"
 import { BsFillCartPlusFill } from "react-icons/bs"
-import { setAddItems } from "../../app/CartSlice"
 
 const SingleShoe = ({
   customStyle,
@@ -24,6 +24,14 @@ const SingleShoe = ({
     dispatch(setAddItems(item))
   }
 
+  const onChartToggle = () => {
+    dispatch(
+      setOpenCart({
+        cartState: true,
+      })
+    )
+  }
+
   return (
     <div className={`singleshoe ${color} ${customStyle}`}>
       <div className="shoe-content">
@@ -40,7 +48,7 @@ const SingleShoe = ({
           <button type="button" onClick={addToCart}>
             <BsFillCartPlusFill />
           </button>
-          <button>{btn}</button>
+          <button onClick={onChartToggle}>{btn}</button>
         </div>
       </div>
       <div className={`shoe-img ${customImg}`}>

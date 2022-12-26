@@ -15,8 +15,6 @@ const Cart = () => {
   const ifCartState = useSelector(selectCartState)
   const ifCartItems = useSelector(selectCartItems)
 
-  console.log(ifCartItems)
-
   const onChartToggle = () => {
     dispatch(
       setClosecart({
