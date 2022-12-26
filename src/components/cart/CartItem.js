@@ -38,17 +38,13 @@ const CartItem = ({
         <h3>{title}</h3>
         <small>{text}</small>
         <div className="qty">
-          {cartQuantity <= 1 ? (
-            ""
-          ) : (
-            <button
-              className="price-icon"
-              type="button"
-              onClick={onDecreaseQty}
-            >
-              <AiOutlineMinus />
-            </button>
-          )}
+          <button
+            className={`price-icon ${cartQuantity === 1 ? "disabled" : ""}`}
+            type="button"
+            onClick={onDecreaseQty}
+          >
+            <AiOutlineMinus />
+          </button>
 
           <span>
             <strong> {cartQuantity} </strong>

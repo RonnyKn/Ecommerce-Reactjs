@@ -184,6 +184,10 @@
   transform: scale(1.5);
 }
 
+.disabled {
+  visibility: hidden;
+}
+
 /* ===============END CART ITEMS============== */
 /* ===============SUBTOTAL============== */
 .subtotal {
