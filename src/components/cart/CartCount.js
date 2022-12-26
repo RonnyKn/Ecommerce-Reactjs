@@ -4,7 +4,7 @@ import { setClearCart } from "../../app/CartSlice"
 import { IoMdArrowRoundBack } from "react-icons/io"
 import { AiOutlineClose } from "react-icons/ai"
 
-const CartCount = ({ onChartToggle, ifCartItems }) => {
+const CartCount = ({ onChartToggle, totalQty }) => {
   const dispatch = useDispatch()
   const onClearCart = () => {
     dispatch(setClearCart())
@@ -20,11 +20,11 @@ const CartCount = ({ onChartToggle, ifCartItems }) => {
           <IoMdArrowRoundBack />
         </button>
         <h4>
-          Your Cart :<span>({`${ifCartItems.length}`} items)</span>
+          Your Cart :<span>({`${totalQty}`} items)</span>
         </h4>
       </div>
       <div className="count-close">
-        {ifCartItems.length === 0 ? (
+        {totalQty === 0 ? (
           ""
         ) : (
           <button type="button" onClick={onClearCart}>
