@@ -20,7 +20,8 @@
   background-image: linear-gradient(90deg, rgba(40, 173, 222, 1) 30%, rgb(27, 76, 224) 85.5%);
   color: var(--color-black);
   padding: 1rem;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* ============CART COUNT=========== */
@@ -205,7 +206,62 @@
   color: var(--color-white);
   padding: .5rem;
   border-radius: .5rem;
-
 }
 
 /* ===============END SUBTOTAL============== */
+
+
+/* ===============MEDIA QUERIES============== */
+@media screen and (max-width:990px) {
+  .cart {
+    width: 60%;
+  }
+
+  .cartitems {
+    gap: .3rem;
+  }
+
+  .cartitem {
+    gap: .3rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .cart {
+    width: 70%;
+  }
+
+  .item-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .item-content small {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .cart {
+    width: 100%;
+  }
+
+  .cartitems {
+    margin-top: .5rem;
+  }
+
+  .item-content h3 {
+    font-size: .9rem;
+  }
+
+  .item-content small {
+    font-size: .7rem;
+  }
+
+  .item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* ===============END MEDIA QUERIES============== */

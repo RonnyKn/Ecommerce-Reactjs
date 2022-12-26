@@ -2,7 +2,6 @@ import React from "react"
 import { useDispatch } from "react-redux"
 import { setClearCart } from "../../app/CartSlice"
 import { IoMdArrowRoundBack } from "react-icons/io"
-import { AiOutlineClose } from "react-icons/ai"
 
 const CartCount = ({ onChartToggle, totalQty }) => {
   const dispatch = useDispatch()
