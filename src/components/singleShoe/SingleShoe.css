@@ -52,19 +52,6 @@
   transform: rotate(-25deg) scale(1.5);
 }
 
-.blue {
-  background: blue !important;
-}
-
-.red {
-  background: red !important;
-}
-
-.violet {
-  background: violet !important;
-  ;
-}
-
 /* =========MEDIA QUERIES======== */
 @media screen and (max-width:990px) {
   .shoe-img img {
