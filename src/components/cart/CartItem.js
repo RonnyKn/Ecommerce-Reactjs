@@ -36,9 +36,7 @@ const CartItem = ({
       </div>
       <div className="item-content">
         <h3>{title}</h3>
-        <small>
-          <strong>{text}</strong>
-        </small>
+        <small>{text} </small>
         <div className="qty">
           <button
             className={`price-icon ${cartQuantity === 1 ? "disabled" : ""}`}

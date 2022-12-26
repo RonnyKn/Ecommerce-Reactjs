@@ -101,4 +101,12 @@
   .header-content {
     gap: 1rem;
   }
+
+  .header-clips {
+    visibility: hidden;
+  }
+
+  .header-socials {
+    visibility: hidden;
+  }
 }
