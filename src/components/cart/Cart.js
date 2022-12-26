@@ -1,5 +1,5 @@
 import "./Cart.css"
-import React from "react"
+import React, { useEffect } from "react"
 import CartCount from "./CartCount"
 import CartEmpty from "./CartEmpty"
 import CartItem from "./CartItem"
@@ -8,12 +8,17 @@ import {
   setClosecart,
   selectCartState,
   selectCartItems,
+  setGetTotal,
+  selectTotalAmount,
+  selectTotalQty,
 } from "../../app/CartSlice"
 
 const Cart = () => {
   const dispatch = useDispatch()
   const ifCartState = useSelector(selectCartState)
   const ifCartItems = useSelector(selectCartItems)
+  const totalAmount = useSelector(selectTotalAmount)
+  const totalQty = useSelector(selectTotalQty)
 
   const onChartToggle = () => {
     dispatch(
@@ -22,6 +27,10 @@ const Cart = () => {
       })
     )
   }
+
+  useEffect(() => {
+    dispatch(setGetTotal())
+  }, [ifCartItems, dispatch])
 
   return (
     <div className={`${ifCartState ? "cart-wrapper " : "cart-unvisible"}`}>
