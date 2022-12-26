@@ -48,7 +48,14 @@ const SingleShoe = ({
           <button type="button" onClick={addToCart}>
             <BsFillCartPlusFill />
           </button>
-          <button onClick={onChartToggle}>{btn}</button>
+          <button
+            onClick={() => {
+              addToCart()
+              onChartToggle()
+            }}
+          >
+            {btn}
+          </button>
         </div>
       </div>
       <div className={`shoe-img ${customImg}`}>
