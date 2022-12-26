@@ -10,8 +10,8 @@
 
 /* kelas tambah when scrollin */
 .nav-10 {
-  background: rgb(195, 193, 251);
-  opacity: 0.9;
+  background: var(--color-white);
+  opacity: 0.75;
   color: black;
 }
 
