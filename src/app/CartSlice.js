@@ -6,6 +6,8 @@ const initialState = {
   cartItems: localStorage.getItem("cart")
     ? JSON.parse(localStorage.getItem("cart"))
     : [], //cek ke localstorage dgn key cart? if true then json string convert to JS object : else leave it empty array.
+  cartTotalAmount: 0,
+  cartTotalQuantity: 0,
 }
 
 const CartSlice = createSlice({
@@ -75,6 +77,28 @@ const CartSlice = createSlice({
       toast.success(`Cart cleared successfully`)
       localStorage.setItem("cart", JSON.stringify(state.cartItems))
     },
+    setGetTotal: (state, action) => {
+      let { totalAmount, totalQty } = state.cartItems.reduce(
+        //use reduce to take subTotal from array cartItems
+        (cartTotal, cartItem) => {
+          const { price, cartQuantity } = cartItem //destructure cartItem
+          const totalPrice = price * cartQuantity
+
+          cartTotal.totalAmount += totalPrice
+          cartTotal.totalQty += cartQuantity
+
+          return cartTotal
+        },
+        {
+          //object ke 2 declare initial  value
+          totalAmount: 0,
+          totalQty: 0,
+        }
+        //reduce array method bisa return 2 object
+      )
+      state.cartTotalAmount = totalAmount
+      state.cartTotalQuantity = totalQty
+    },
   },
 })
 
@@ -86,10 +110,14 @@ export const {
   setIncreaseQty,
   setDecreaseQty,
   setClearCart,
+  setGetTotal,
 } = CartSlice.actions
 
 export const selectCartState = (state) => state.cart.cartState
 
 export const selectCartItems = (state) => state.cart.cartItems
+
+export const selectTotalAmount = (state) => state.cart.cartTotalAmount
+export const selectTotalQty = (state) => state.cart.cartTotalQuantity
 
 export default CartSlice.reducer
