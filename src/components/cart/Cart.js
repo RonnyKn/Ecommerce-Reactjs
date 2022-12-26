@@ -47,7 +47,7 @@ const Cart = () => {
           </div>
         )}
 
-        <div className="subtotal">
+        <div className={`${totalQty === 0 ? "disabled" : "subtotal"}`}>
           <div className="subtotal-price">
             <h4>SUBTOTAL</h4>
             <h4>${totalAmount}</h4>
