@@ -52,7 +52,7 @@ const Cart = () => {
         <div className="subtotal">
           <div className="subtotal-price">
             <h5>SUBTOTAL</h5>
-            <span>$000</span>
+            <span>${totalAmount}</span>
           </div>
           <p>Taxes and Shipping Will Calculate At Shipping</p>
           <button>Check Out</button>
