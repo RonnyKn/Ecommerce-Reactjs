@@ -36,7 +36,9 @@ const CartItem = ({
       </div>
       <div className="item-content">
         <h3>{title}</h3>
-        <small>{text}</small>
+        <small>
+          <strong>{text}</strong>
+        </small>
         <div className="qty">
           <button
             className={`price-icon ${cartQuantity === 1 ? "disabled" : ""}`}
@@ -45,18 +47,16 @@ const CartItem = ({
           >
             <AiOutlineMinus />
           </button>
-
-          <span>
-            <strong> {cartQuantity} </strong>
-          </span>
+          <strong> {cartQuantity} </strong>
           <button className="price-icon" type="button" onClick={onIncreaseQty}>
             <AiOutlinePlus />
           </button>
         </div>
       </div>
       <div className="item-price">
-        <h3>Price:</h3>
-        <span>${price * cartQuantity}</span>
+        <span>
+          <strong>${price * cartQuantity}</strong>
+        </span>
         <button type="button" className="price-icon" onClick={onRemoveItems}>
           <AiTwotoneDelete />
         </button>

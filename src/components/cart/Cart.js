@@ -35,26 +35,26 @@ const Cart = () => {
   return (
     <div className={`${ifCartState ? "cart-wrapper " : "cart-unvisible"}`}>
       <div className="cart">
-        <div className="cart--count">
-          <CartCount onChartToggle={onChartToggle} totalQty={totalQty} />
-        </div>
-        <div className="cart--items">
-          {ifCartItems.length === 0 ? (
-            <CartEmpty onChartToggle={onChartToggle} />
-          ) : (
-            <div className="cartitems">
-              {ifCartItems.map((item, idx) => (
-                <CartItem item={item} key={idx} />
-              ))}
-            </div>
-          )}
-        </div>
+        <CartCount onChartToggle={onChartToggle} totalQty={totalQty} />
+
+        {ifCartItems.length === 0 ? (
+          <CartEmpty onChartToggle={onChartToggle} />
+        ) : (
+          <div className="cartitems">
+            {ifCartItems.map((item, idx) => (
+              <CartItem item={item} key={idx} />
+            ))}
+          </div>
+        )}
+
         <div className="subtotal">
           <div className="subtotal-price">
-            <h5>SUBTOTAL</h5>
-            <span>${totalAmount}</span>
+            <h4>SUBTOTAL</h4>
+            <h4>${totalAmount}</h4>
           </div>
-          <p>Taxes and Shipping Will Calculate At Shipping</p>
+          <p>
+            <em>Taxes and Shipping Will Calculate At Shipping</em>
+          </p>
           <button>Check Out</button>
         </div>
       </div>
