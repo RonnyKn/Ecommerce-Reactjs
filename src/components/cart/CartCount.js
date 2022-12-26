@@ -23,14 +23,10 @@ const CartCount = ({ onChartToggle, totalQty }) => {
           Your Cart :<span>({`${totalQty}`} items)</span>
         </h4>
       </div>
-      <div className="count-close">
-        {totalQty === 0 ? (
-          ""
-        ) : (
-          <button type="button" onClick={onClearCart}>
-            <AiOutlineClose />
-          </button>
-        )}
+      <div className={`count-reset ${totalQty === 0 ? "disabled" : ""}`}>
+        <button type="button" onClick={onClearCart}>
+          <AiOutlineClose />
+        </button>
       </div>
     </div>
   )
