@@ -8,7 +8,7 @@ import { BsFillCartPlusFill } from "react-icons/bs"
 const SingleShoe = ({
   customStyle,
   customImg,
-  customNone,
+  customCenter,
   id,
   title,
   text,
@@ -37,14 +37,14 @@ const SingleShoe = ({
       <div className="shoe-content">
         <h5>{title}</h5>
         <h6> {text}</h6>
-        <div className={`shoe-span ${customNone}`}>
+        <div className={`shoe-span ${customCenter}`}>
           <span>${price}</span>
           <div className="rating">
             <AiFillStar />
             <span>{rating}</span>
           </div>
         </div>
-        <div className={`shoe-button ${customNone}`}>
+        <div className={`shoe-button ${customCenter}`}>
           <button type="button" onClick={addToCart}>
             <BsFillCartPlusFill />
           </button>

@@ -22,12 +22,7 @@ function App() {
       <Cart />
       <Header headerapi={headerapi} />
       <PopularSales popularsales={popularsales} highlight={highlight} />
-      <TopRatedSales
-        topratedsales={topratedsales}
-        customStyle={"grid1"}
-        customImg={"img1"}
-        featured={featured}
-      />
+      <TopRatedSales topratedsales={topratedsales} featured={featured} />
       <Story stories={stories} />
       <Footer />
     </>

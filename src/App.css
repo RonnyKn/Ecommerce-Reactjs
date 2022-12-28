@@ -65,14 +65,14 @@ button {
 }
 
 /* =======CUSTOM SHOE COLOR======== */
-.blue {
+.blue-white {
   background-image: linear-gradient(0deg, rgb(191, 173, 255) 10%, rgb(0, 64, 255) 85.5%) !important;
 }
 
-.red {
+.red-black {
   background-image: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgb(255, 0, 0) 85.5%) !important;
 }
 
-.violet {
+.violet-white {
   background-image: linear-gradient(0deg, rgb(182, 179, 255) 10%, rgb(255, 0, 242) 85.5%) !important;
 }

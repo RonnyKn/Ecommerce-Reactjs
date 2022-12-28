@@ -18,8 +18,9 @@ const TopRatedSales = ({
           {items.map((item, idx) => (
             <SingleShoe
               {...item}
-              customImg={customImg}
-              customStyle={customStyle}
+              customStyle={"grid1"}
+              customImg={"img1"}
+              customCenter={"customCenter"}
               key={idx}
             />
           ))}

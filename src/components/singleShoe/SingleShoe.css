@@ -9,13 +9,22 @@
 
 /* =========TOP SALES PROPS=========== */
 .grid1 {
+  width: 100%;
+  margin: 0 auto;
   grid-template-columns: 1fr !important;
   text-align: center;
+  ;
 }
 
 .img1 img {
   transform: rotate(0deg) scale(1) !important;
   padding: 1rem !important;
+}
+
+.customCenter {
+  display: flex !important;
+  justify-content: center !important;
+
 }
 
 /* =========END=========== */
