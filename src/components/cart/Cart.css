@@ -205,10 +205,6 @@
 
 .subtotal button {
   width: 100%;
-  background: var(--color-black);
-  color: var(--color-white);
-  padding: .5rem;
-  border-radius: .5rem;
 }
 
 /* ===============END SUBTOTAL============== */
