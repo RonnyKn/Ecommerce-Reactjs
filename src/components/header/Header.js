@@ -16,7 +16,9 @@ const Header = ({ headerapi: { title, subtitle, img, btntext, videos } }) => {
         <div className="header-title">
           <h1>{title}</h1>
           <h2>{subtitle}</h2>
-          <button className="btn">{btntext}</button>
+          <a href="https://www.nike.com/id/" target="_blank" rel="noreferrer">
+            <button className="btn">{btntext}</button>
+          </a>
         </div>
         <div className="header-content">
           <aside className="header-clips">
