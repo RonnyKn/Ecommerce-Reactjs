@@ -92,6 +92,18 @@
 @media screen and (max-width:600px) {
   .container {
     width: var(--container-width-sm);
+    height: 80vh;
+  }
+
+  .header-product {
+    margin-top: 5rem;
+    transform: scale(1.25) rotate(-20deg);
+    transition: var(--transition);
+  }
+
+  .header-product:hover {
+    transform: scale(1.25) rotate(0);
+    transition: var(--transition);
   }
 
   .header-title {
