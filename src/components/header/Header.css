@@ -16,6 +16,7 @@
 }
 
 .header-title button {
+  margin-top: .5rem;
   background: var(--color-black);
   color: var(--color-white);
   padding: .5rem 1rem;
