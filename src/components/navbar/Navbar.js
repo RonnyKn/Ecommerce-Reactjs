@@ -36,7 +36,10 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${navState ? "nav-10" : ""}`}>
       <div className="container navbar-container">
-        <div className={`navbar-logo ${navState ? "logo-10" : ""}`}>
+        <div
+          className={`navbar-logo ${navState ? "logo-10" : ""}`}
+          onClick={() => window.scroll(0, 0)}
+        >
           <img src={Logo} alt="Logo" />
         </div>
         <div className={`navbar-menu ${navState ? "menu-10" : ""}`}>
