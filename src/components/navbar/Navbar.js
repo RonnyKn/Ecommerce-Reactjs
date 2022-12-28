@@ -40,10 +40,10 @@ const Navbar = () => {
           <img src={Logo} alt="Logo" />
         </div>
         <div className={`navbar-menu ${navState ? "menu-10" : ""}`}>
-          <button>
+          <button onClick={() => window.alert("Available Soon")}>
             <BiSearch />
           </button>
-          <button>
+          <button onClick={() => window.alert("Available Soon")}>
             <BiHeart />
           </button>
           <button className="navbar-cart" type="button" onClick={onChartToggle}>
