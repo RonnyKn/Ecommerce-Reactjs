@@ -59,9 +59,10 @@ button {
 
 .btn {
   background: var(--color-black);
-  padding: .7rem;
   color: var(--color-white);
+  padding: .7rem;
   border-radius: .5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
 }
 
 /* =======CUSTOM SHOE COLOR======== */

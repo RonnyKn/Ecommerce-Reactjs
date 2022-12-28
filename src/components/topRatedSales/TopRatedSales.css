@@ -35,17 +35,14 @@
   margin: .5rem 0 2rem;
 }
 
-.featured-content a {
-  height: fit-content;
-  width: 100%;
-  padding: .7rem .5rem;
-  background: blueviolet;
-  border-radius: 1rem;
-  color: var(--color-white);
+.featured-img img {
+  transition: var(--transition);
+  transform: rotate(20deg);
 }
 
-.featured-img img {
-  transform: rotate(20deg);
+.featured-img img:hover {
+  transform: rotate(0deg);
+  transition: var(--transition);
 }
 
 /* =============MEDIA QUERIES============= */

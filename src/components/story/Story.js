@@ -51,7 +51,12 @@ const Story = ({ stories: { title, news } }) => {
                 </div>
                 <h5>{value?.title}</h5>
                 <p>{truncate(value?.text, { length: 175 })}</p>
-                <a href={value?.url} target="_blank" rel="noreferrer">
+                <a
+                  href={value?.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn"
+                >
                   {value?.btn}
                 </a>
               </div>

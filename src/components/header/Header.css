@@ -17,11 +17,7 @@
 
 .header-title button {
   margin-top: .5rem;
-  background: var(--color-black);
-  color: var(--color-white);
-  padding: .5rem 1rem;
-  border-radius: .5rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+
 }
 
 .header-content {
@@ -101,6 +97,12 @@
   .header-title {
     font-size: .5rem;
     margin-top: 1.5rem;
+  }
+
+  .header-title button {
+    font-size: .6rem;
+    height: fit-content;
+    width: fit-content;
   }
 
   .header-content {

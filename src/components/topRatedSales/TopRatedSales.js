@@ -30,7 +30,12 @@ const TopRatedSales = ({
             <h1>{featured?.heading}</h1>
             <h2>{featured?.title}</h2>
             <p>{featured?.text}</p>
-            <a href={featured?.url} target="_blank" rel="noreferrer">
+            <a
+              href={featured?.url}
+              target="_blank"
+              rel="noreferrer"
+              className="btn"
+            >
               {featured?.btn}
             </a>
           </div>
