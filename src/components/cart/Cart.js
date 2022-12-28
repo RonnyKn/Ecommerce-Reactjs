@@ -55,7 +55,9 @@ const Cart = () => {
           <p>
             <em>Taxes and Shipping Will Calculate At Shipping</em>
           </p>
-          <button>Check Out</button>
+          <button onClick={() => window.alert("Available Soon")}>
+            Check Out
+          </button>
         </div>
       </div>
     </div>
