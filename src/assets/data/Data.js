@@ -93,7 +93,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product7,
       price: "150",
-      color: "from-sky-600 to-indigo-600",
+      color: "blue-white",
     },
     {
       id: "0M0x2",
@@ -103,7 +103,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product2,
       price: "150",
-      color: "from-green-500 to-emerald-500",
+      color: "green-white",
     },
     {
       id: "0M0x3",
@@ -113,7 +113,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product3,
       price: "150",
-      color: "from-red-500 to-rose-500",
+      color: "red-white",
     },
     {
       id: "0M0x4",
@@ -123,7 +123,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product4,
       price: "150",
-      color: "from-orange-500 to-amber-500",
+      color: "orange-white",
     },
     {
       id: "0M0x5",
@@ -133,7 +133,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product5,
       price: "150",
-      color: "from-gray-900 to-yellow-500",
+      color: "brown-white",
     },
     {
       id: "0M0x6",
@@ -143,7 +143,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product6,
       price: "150",
-      color: "from-blue-500 to-cyan-500",
+      color: "bluesky-white",
     },
     {
       id: "0M0x7",
@@ -153,7 +153,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product1,
       price: "150",
-      color: "from-yellow-500 to-yellow-500",
+      color: "yellow-dark",
     },
     {
       id: "0M0x8",
@@ -163,7 +163,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product9,
       price: "150",
-      color: "from-[#936550] to-orange-900",
+      color: "brown-white",
     },
     {
       id: "0M0x9",
@@ -173,7 +173,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product10,
       price: "150",
-      color: "from-indigo-700 to-indigo-700",
+      color: "purple-white",
     },
     {
       id: "0M0x10",
@@ -183,7 +183,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product12,
       price: "150",
-      color: "from-green-600 to-lime-500",
+      color: "green-dark",
     },
     {
       id: "0M0x11",
@@ -193,7 +193,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product11,
       price: "150",
-      color: "from-slate-900 to-black",
+      color: "white-dark",
     },
     {
       id: "0M0x12",
@@ -203,7 +203,7 @@ const topratedsales = {
       btn: "Buy Now",
       img: product8,
       price: "150",
-      color: "from-blue-900 to-blue-500",
+      color: "darkblue-white",
     },
   ],
 }

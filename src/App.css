@@ -70,9 +70,49 @@ button {
 }
 
 .red-black {
-  background-image: linear-gradient(0deg, rgb(0, 0, 0) 10%, rgb(255, 0, 0) 85.5%) !important;
+  background-image: linear-gradient(0deg, rgb(58, 58, 58) 10%, rgb(255, 0, 0) 85.5%) !important;
 }
 
 .violet-white {
   background-image: linear-gradient(0deg, rgb(182, 179, 255) 10%, rgb(255, 0, 242) 85.5%) !important;
+}
+
+.green-white {
+  background-image: linear-gradient(0deg, rgb(182, 179, 255) 10%, rgb(13, 255, 0) 85.5%) !important;
+}
+
+.red-white {
+  background-image: linear-gradient(0deg, rgb(182, 179, 255) 10%, rgb(255, 0, 0) 85.5%) !important;
+}
+
+.orange-white {
+  background-image: linear-gradient(0deg, rgb(182, 179, 255) 10%, rgb(255, 128, 0) 85.5%) !important;
+}
+
+.brown-white {
+  background-image: linear-gradient(0deg, rgb(182, 179, 255) 10%, rgb(113, 86, 58) 85.5%) !important;
+}
+
+.bluesky-white {
+  background-image: linear-gradient(0deg, rgb(191, 173, 255) 10%, rgb(28, 85, 255) 85.5%) !important;
+}
+
+.yellow-dark {
+  background-image: linear-gradient(0deg, rgb(33, 33, 33) 10%, rgb(255, 128, 0) 85.5%) !important;
+}
+
+.purple-white {
+  background-image: linear-gradient(0deg, rgb(191, 173, 255) 10%, rgb(127, 0, 196) 85.5%) !important;
+}
+
+.green-dark {
+  background-image: linear-gradient(0deg, rgb(33, 33, 33) 10%, rgb(48, 255, 29) 85.5%) !important;
+}
+
+.white-dark {
+  background-image: linear-gradient(0deg, rgb(191, 173, 255) 10%, rgb(33, 33, 33) 85.5%) !important;
+}
+
+.darkblue-white {
+  background-image: linear-gradient(0deg, rgb(191, 173, 255) 10%, rgb(0, 32, 128) 85.5%) !important;
 }
