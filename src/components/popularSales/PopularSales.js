@@ -22,7 +22,9 @@ const PopularSales = ({ highlight, popularsales: { title, items } }) => {
             <h1>{highlight?.heading}</h1>
             <h2>{highlight?.title}</h2>
             <p>{highlight?.text}</p>
-            <a href={highlight?.url}>{highlight?.btn}</a>
+            <a href={highlight?.url} target="_blank" rel="noreferrer">
+              {highlight?.btn}
+            </a>
           </div>
         </article>
       </div>
