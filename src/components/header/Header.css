@@ -92,7 +92,10 @@
 @media screen and (max-width:600px) {
   .container {
     width: var(--container-width-sm);
-    height: 80vh;
+  }
+
+  .header {
+    height: 95vh;
   }
 
   .header-product {
