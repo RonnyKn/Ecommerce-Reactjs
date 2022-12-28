@@ -30,7 +30,9 @@ const TopRatedSales = ({
             <h1>{featured?.heading}</h1>
             <h2>{featured?.title}</h2>
             <p>{featured?.text}</p>
-            <a href={featured?.url}>{featured?.btn}</a>
+            <a href={featured?.url} target="_blank" rel="noreferrer">
+              {featured?.btn}
+            </a>
           </div>
           <div className="featured-img">
             <img src={featured?.img} alt="featuredImg" />
